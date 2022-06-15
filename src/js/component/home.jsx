@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Form from "./Form";
 import Header from "./Header";
 import TodoList from "./TodoList";
@@ -31,6 +32,11 @@ const Home = () => {
 						todos={todos} 
 						setTodos={setTodos}
 						setEditTodo={setEditTodo}
+					/>
+				</div>
+				<div>
+					<Footer
+						todos={todos}
 					/>
 				</div>
 			</div>

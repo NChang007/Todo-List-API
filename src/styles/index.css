@@ -21,6 +21,7 @@
     border-radius: 10px;
     box-shadow: 3px 6px 40px #000;
     margin-bottom: 10px;
+    position: absolute;
 }
 
 .header h1 {
@@ -106,3 +107,22 @@ button:focus {
     outline: none;
 }
 
+
+.footerdiv {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f1af71;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0px;
+    width: 488px;
+    margin-bottom: 12px;
+
+}
+
+.footerdiv > p {
+    padding: 3px;
+    margin: 0;
+}
