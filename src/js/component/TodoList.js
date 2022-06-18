@@ -19,15 +19,17 @@ function TodoList({todos, setTodos, setEditTodo}) {
     }
     const handleDelete =({ id }) => {
         setTodos(todos.filter((todo) => todo.id !== id));
+    
     }
+    
 
   return (
     <div>
-        {todos.map((todo) => (
-            <li className='list-item' key={todo.id}>
+        {todos.map((todo, key) => (
+            <li className='list-item' key={key}>
                 <input 
                     type='text' 
-                    value={todo.title} 
+                    value={todo.label} 
                     className={`list ${todo.completed ? 'complete' : ''}`} 
                     onChange={(e) => e.preventDefault()}
                 />

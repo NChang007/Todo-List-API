@@ -111,6 +111,7 @@ button:focus {
 .footerdiv {
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border: 1px solid #f1af71;
     border-radius: 10px;
@@ -119,10 +120,18 @@ button:focus {
     bottom: 0px;
     width: 488px;
     margin-bottom: 12px;
-
+    align-items: center;
 }
 
 .footerdiv > p {
     padding: 3px;
     margin: 0;
+}
+
+.footerdiv > button {
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
